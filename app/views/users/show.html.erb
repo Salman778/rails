@@ -1,0 +1,6 @@
+<h3><%= @user.first_name %> <%= @user.last_name %></h3>
+<em><%= @user.email %></em>
+<br />
+<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'Destroy', user_path(@user), method: :delete, data: {confirm: 'Are you sure?'} %>
+<%= link_to 'Back', users_path %>
